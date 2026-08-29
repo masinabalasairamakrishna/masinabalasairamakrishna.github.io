@@ -7,7 +7,7 @@
     <title>Masina Bala Sai Rama Krishna | Backend Developer</title>
 
     <meta name="description"
-          content="Portfolio of Masina Bala Sai Rama Krishna - Backend Developer skilled in Java, Python, SAP ABAP, Spring Boot, SQL and REST APIs.">
+          content="Portfolio of Masina Bala Sai Rama Krishna - Backend Developer skilled in Java, Python, Spring Boot, SAP ABAP, SQL, REST APIs and software development.">
 
     <style>
         * {
@@ -24,15 +24,19 @@
             line-height: 1.6;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         /* NAVBAR */
 
         nav {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255,255,255,0.96);
-            border-bottom: 1px solid #e4e9f2;
-            padding: 16px 7%;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,7 +45,7 @@
         .logo {
             font-size: 22px;
             font-weight: 800;
-            color: #1357b7;
+            color: #1261b0;
         }
 
         nav ul {
@@ -50,14 +54,13 @@
             gap: 25px;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #26344d;
+        nav ul li a {
+            color: #253858;
             font-weight: 600;
         }
 
-        nav a:hover {
-            color: #1357b7;
+        nav ul li a:hover {
+            color: #1261b0;
         }
 
         /* HERO */
@@ -66,46 +69,46 @@
             min-height: 90vh;
             display: flex;
             align-items: center;
-            padding: 80px 7%;
-            background:
-                radial-gradient(circle at 85% 20%, #dceaff 0, transparent 28%),
-                linear-gradient(135deg, #f8fbff, #eef5ff);
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #eef6ff, #ffffff);
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 850px;
         }
 
-        .tag {
+        .badge {
             display: inline-block;
-            padding: 8px 16px;
+            padding: 9px 18px;
+            background: #dceeff;
+            color: #1261b0;
             border-radius: 30px;
-            background: #e3efff;
-            color: #1357b7;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .hero h1 {
             font-size: clamp(42px, 7vw, 76px);
             line-height: 1.05;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
+            color: #172033;
         }
 
         .hero h1 span {
-            color: #1357b7;
+            color: #1261b0;
         }
 
-        .hero h2 {
-            font-size: clamp(22px, 3vw, 32px);
+        .role {
+            font-size: 27px;
+            font-weight: 700;
+            color: #29476b;
             margin-bottom: 20px;
-            color: #35425a;
         }
 
         .hero p {
-            max-width: 750px;
             font-size: 19px;
-            color: #5d6a7d;
+            color: #52657d;
+            max-width: 760px;
             margin-bottom: 30px;
         }
 
@@ -116,52 +119,52 @@
         }
 
         .btn {
-            display: inline-block;
-            padding: 13px 24px;
+            padding: 14px 25px;
             border-radius: 8px;
-            text-decoration: none;
             font-weight: 700;
-            transition: 0.25s;
+            display: inline-block;
+            transition: 0.3s;
         }
 
         .btn-primary {
-            background: #1357b7;
+            background: #1261b0;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #0d438e;
+            background: #0c4d91;
             transform: translateY(-2px);
         }
 
-        .btn-secondary {
-            border: 2px solid #1357b7;
-            color: #1357b7;
+        .btn-outline {
+            border: 2px solid #1261b0;
+            color: #1261b0;
             background: white;
         }
 
-        .btn-secondary:hover {
-            background: #eaf2ff;
+        .btn-outline:hover {
+            background: #eef6ff;
         }
 
-        /* GENERAL */
+        /* COMMON */
 
         section {
-            padding: 80px 7%;
+            padding: 80px 8%;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 45px;
         }
 
         .section-title h2 {
             font-size: 38px;
+            color: #172033;
             margin-bottom: 10px;
         }
 
         .section-title p {
-            color: #69768a;
+            color: #68778d;
         }
 
         /* ABOUT */
@@ -170,29 +173,12 @@
             background: white;
         }
 
-        .about-grid {
-            max-width: 1050px;
+        .about-box {
+            max-width: 950px;
             margin: auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-
-        .about-card {
-            padding: 30px;
-            border: 1px solid #e2e8f1;
-            border-radius: 15px;
-            background: #fbfdff;
-        }
-
-        .about-card h3 {
-            color: #1357b7;
-            margin-bottom: 15px;
-            font-size: 23px;
-        }
-
-        .about-card p {
-            color: #59677b;
+            text-align: center;
+            font-size: 18px;
+            color: #52657d;
         }
 
         /* SKILLS */
@@ -201,31 +187,25 @@
             max-width: 1100px;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 18px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
         }
 
-        .skill {
+        .skill-card {
             background: white;
-            border: 1px solid #e1e7f0;
+            padding: 25px;
             border-radius: 12px;
-            padding: 22px;
-            text-align: center;
-            font-weight: 700;
-            transition: 0.25s;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 5px 18px rgba(30, 60, 90, 0.06);
         }
 
-        .skill:hover {
-            transform: translateY(-5px);
-            border-color: #1357b7;
-            box-shadow: 0 10px 25px rgba(20,70,130,0.08);
+        .skill-card h3 {
+            color: #1261b0;
+            margin-bottom: 15px;
         }
 
-        .skill small {
-            display: block;
-            margin-top: 6px;
-            color: #7a8798;
-            font-weight: 500;
+        .skill-card p {
+            color: #52657d;
         }
 
         /* PROJECTS */
@@ -238,71 +218,67 @@
             max-width: 1100px;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
-        .project {
-            border: 1px solid #e1e7f0;
-            border-radius: 15px;
+        .project-card {
+            background: #f8fbff;
             padding: 28px;
-            background: #fbfdff;
-            transition: 0.25s;
+            border-radius: 14px;
+            border: 1px solid #dce7f3;
+            transition: 0.3s;
         }
 
-        .project:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 15px 35px rgba(25,65,120,0.1);
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(20, 70, 120, 0.12);
         }
 
-        .project h3 {
-            margin-bottom: 12px;
-            color: #1357b7;
+        .project-card h3 {
+            color: #172033;
+            margin-bottom: 10px;
         }
 
-        .project p {
-            color: #627085;
+        .project-card p {
+            color: #52657d;
             margin-bottom: 15px;
         }
 
-        .tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7px;
-        }
-
-        .tech span {
-            background: #e8f1ff;
-            color: #1357b7;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 13px;
+        .project-tech {
+            font-size: 14px;
+            color: #1261b0;
             font-weight: 700;
+            margin-bottom: 18px;
         }
 
         /* CERTIFICATIONS */
+
+        .certifications {
+            background: #f5f8fc;
+        }
 
         .cert-grid {
             max-width: 900px;
             margin: auto;
             display: grid;
-            gap: 18px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
-        .cert {
+        .cert-card {
             background: white;
-            padding: 22px 25px;
-            border-left: 5px solid #1357b7;
-            border-radius: 8px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+            padding: 25px;
+            border-left: 5px solid #1261b0;
+            border-radius: 10px;
         }
 
-        .cert h3 {
-            margin-bottom: 5px;
+        .cert-card h3 {
+            margin-bottom: 8px;
         }
 
-        .cert p {
-            color: #69768a;
+        .cert-card p {
+            color: #62748a;
         }
 
         /* EDUCATION */
@@ -311,76 +287,69 @@
             background: white;
         }
 
-        .education-card {
+        .education-box {
             max-width: 850px;
             margin: auto;
+            background: #f7fbff;
             padding: 30px;
-            border: 1px solid #e1e7f0;
-            border-radius: 15px;
-            background: #fbfdff;
+            border-radius: 12px;
+            border: 1px solid #dce7f3;
         }
 
-        .education-card h3 {
-            color: #1357b7;
-            font-size: 25px;
+        .education-box h3 {
+            color: #1261b0;
             margin-bottom: 8px;
-        }
-
-        .education-card p {
-            color: #647186;
         }
 
         /* CONTACT */
 
-        .contact-box {
-            max-width: 900px;
-            margin: auto;
+        .contact {
+            background: #172033;
+            color: white;
             text-align: center;
         }
 
-        .contact-box p {
-            color: #687589;
-            font-size: 18px;
-            margin-bottom: 30px;
+        .contact h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
         }
 
         .socials {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 12px;
         }
 
         .socials a {
-            padding: 12px 20px;
-            border: 1px solid #d9e1ed;
-            border-radius: 8px;
-            background: white;
-            text-decoration: none;
-            color: #1357b7;
-            font-weight: 700;
+            padding: 11px 18px;
+            border: 1px solid #60708a;
+            border-radius: 7px;
+            color: white;
         }
 
         .socials a:hover {
-            background: #eaf2ff;
+            background: #1261b0;
+            border-color: #1261b0;
         }
 
         /* FOOTER */
 
         footer {
-            background: #0d2345;
-            color: white;
             text-align: center;
-            padding: 30px 7%;
-        }
-
-        footer p {
-            opacity: 0.8;
+            padding: 22px;
+            background: #101827;
+            color: #aeb9c8;
         }
 
         /* MOBILE */
 
-        @media (max-width: 800px) {
+        @media (max-width: 700px) {
 
             nav {
                 padding: 15px 5%;
@@ -390,20 +359,20 @@
                 display: none;
             }
 
+            .hero {
+                padding: 60px 5%;
+            }
+
             section {
                 padding: 60px 5%;
             }
 
-            .hero {
-                padding: 70px 5%;
+            .role {
+                font-size: 21px;
             }
 
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                font-size: 48px;
+            .hero p {
+                font-size: 17px;
             }
         }
     </style>
@@ -411,7 +380,7 @@
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVBAR -->
 
 <nav>
     <div class="logo">Masina Bala Sai Rama Krishna</div>
@@ -432,7 +401,7 @@
 
     <div class="hero-content">
 
-        <div class="tag">
+        <div class="badge">
             Open to Software Engineering Opportunities
         </div>
 
@@ -440,9 +409,9 @@
             Hi, I'm <span>Masina Bala Sai Rama Krishna</span>
         </h1>
 
-        <h2>
+        <div class="role">
             Backend Developer | Java | Python | SAP ABAP
-        </h2>
+        </div>
 
         <p>
             Engineering student passionate about building reliable,
@@ -452,18 +421,17 @@
 
         <div class="buttons">
 
-            <a class="btn btn-primary"
-               href="#projects">
+            <a class="btn btn-primary" href="#projects">
                 View My Projects
             </a>
 
-            <a class="btn btn-secondary"
+            <a class="btn btn-outline"
                href="https://github.com/masinabalasairamakrishna"
                target="_blank">
                 GitHub
             </a>
 
-            <a class="btn btn-secondary"
+            <a class="btn btn-outline"
                href="https://www.linkedin.com/in/masina-bala-sai-rama-krishna-985601415/"
                target="_blank">
                 LinkedIn
@@ -482,50 +450,26 @@
 
     <div class="section-title">
         <h2>About Me</h2>
-        <p>Backend-focused software engineering profile</p>
+        <p>Backend Development & Software Engineering</p>
     </div>
 
-    <div class="about-grid">
+    <div class="about-box">
 
-        <div class="about-card">
+        <p>
+            I am an engineering student interested in backend development,
+            enterprise applications and software engineering. I work with
+            Java, Python, Spring Boot, SQL, REST APIs and SAP ABAP.
+        </p>
 
-            <h3>Who I Am</h3>
+        <br>
 
-            <p>
-                I am a Computer Science engineering student at
-                Sri Vasavi Engineering College, interested in backend
-                development, software engineering and enterprise
-                technologies.
-            </p>
-
-            <br>
-
-            <p>
-                I enjoy solving programming problems, developing
-                practical applications and continuously improving
-                my technical skills.
-            </p>
-
-        </div>
-
-        <div class="about-card">
-
-            <h3>What I Do</h3>
-
-            <p>
-                I work with Java, Python, SAP ABAP, Spring Boot,
-                SQL, REST APIs and backend development concepts.
-            </p>
-
-            <br>
-
-            <p>
-                My focus is on clean code, problem solving,
-                database integration, API development,
-                debugging and building efficient applications.
-            </p>
-
-        </div>
+        <p>
+            I enjoy solving programming problems, designing APIs,
+            working with databases and building practical software
+            applications. I am continuously improving my knowledge of
+            Data Structures & Algorithms, Object-Oriented Programming
+            and modern development practices.
+        </p>
 
     </div>
 
@@ -549,84 +493,91 @@
 
     <div class="skills-grid">
 
-        <div class="skill">
-            ☕ Java
-            <small>Core Java • OOP • Collections • Streams</small>
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <p>
+                Java<br>
+                Python<br>
+                C<br>
+                Object-Oriented Programming
+            </p>
         </div>
 
-        <div class="skill">
-            🐍 Python
-            <small>Core Python • OOP • NumPy • Pandas</small>
+
+        <div class="skill-card">
+            <h3>Backend Development</h3>
+            <p>
+                Spring Boot<br>
+                REST APIs<br>
+                Hibernate / JPA<br>
+                Backend Architecture
+            </p>
         </div>
 
-        <div class="skill">
-            SAP ABAP
-            <small>Reports • ALV • Enhancements</small>
+
+        <div class="skill-card">
+            <h3>Databases</h3>
+            <p>
+                SQL<br>
+                MySQL<br>
+                Database Design<br>
+                DBMS
+            </p>
         </div>
 
-        <div class="skill">
-            Spring Boot
-            <small>REST APIs • Backend Development</small>
+
+        <div class="skill-card">
+            <h3>SAP</h3>
+            <p>
+                SAP ABAP<br>
+                Data Dictionary<br>
+                Reports<br>
+                Internal Tables
+            </p>
         </div>
 
-        <div class="skill">
-            SQL
-            <small>MySQL • Database Queries</small>
+
+        <div class="skill-card">
+            <h3>Development Tools</h3>
+            <p>
+                Git & GitHub<br>
+                Maven<br>
+                Postman<br>
+                VS Code
+            </p>
         </div>
 
-        <div class="skill">
-            REST APIs
-            <small>API Design • JSON • HTTP</small>
+
+        <div class="skill-card">
+            <h3>DevOps & Systems</h3>
+            <p>
+                Docker<br>
+                Linux<br>
+                CI/CD Fundamentals<br>
+                Git Workflows
+            </p>
         </div>
 
-        <div class="skill">
-            Hibernate & JPA
-            <small>ORM • Database Integration</small>
+
+        <div class="skill-card">
+            <h3>Computer Science</h3>
+            <p>
+                Data Structures & Algorithms<br>
+                OOP<br>
+                DBMS<br>
+                Problem Solving
+            </p>
         </div>
 
-        <div class="skill">
-            Data Structures
-            <small>Algorithms • Problem Solving</small>
-        </div>
 
-        <div class="skill">
-            Git & GitHub
-            <small>Version Control • Repositories</small>
-        </div>
-
-        <div class="skill">
-            Docker
-            <small>Container Basics</small>
-        </div>
-
-        <div class="skill">
-            Postman
-            <small>API Testing</small>
-        </div>
-
-        <div class="skill">
-            Maven
-            <small>Java Build Management</small>
-        </div>
-
-        <div class="skill">
-            Linux
-            <small>Basic Commands</small>
-        </div>
-
-        <div class="skill">
-            JSON / XML
-            <small>Data Exchange</small>
-        </div>
-
-        <div class="skill">
-            Agile
-            <small>Development Methodology</small>
-        </div>
-
-        <div class="skill">
-            Problem Solving
-            <small>Logical Thinking • Debugging</small>
+        <div class="skill-card">
+            <h3>Engineering Practices</h3>
+            <p>
+                Agile / SDLC<br>
+                Debugging<br>
+                API Testing<br>
+                Clean Code
+            </p>
         </div>
 
     </div>
@@ -652,86 +603,93 @@
     <div class="project-grid">
 
 
-        <div class="project">
+        <div class="project-card">
 
             <h3>CareerConnect Job Portal</h3>
 
             <p>
-                A job portal application designed to connect
-                candidates and recruiters with features for
-                job discovery, applications and career management.
+                A web-based job portal designed to connect job seekers
+                with employment opportunities and provide a structured
+                platform for job management.
             </p>
 
-            <div class="tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Backend</span>
+            <div class="project-tech">
+                HTML | Web Development | GitHub
             </div>
+
+            <a class="btn btn-outline"
+               href="https://github.com/masinabalasairamakrishna/careerconnect-job-portal"
+               target="_blank">
+                View Project
+            </a>
 
         </div>
 
 
-        <div class="project">
+        <div class="project-card">
 
             <h3>Student Management System</h3>
 
             <p>
-                A management application for handling student
-                information and performing CRUD operations with
-                database integration.
+                A student management application for handling student
+                records and performing CRUD-based data operations.
             </p>
 
-            <div class="tech">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>MySQL</span>
-                <span>Hibernate</span>
+            <div class="project-tech">
+                Java | Spring Boot | MySQL | REST APIs
             </div>
+
+            <a class="btn btn-outline"
+               href="https://github.com/masinabalasairamakrishna/StudentManagementSystem"
+               target="_blank">
+                View Project
+            </a>
 
         </div>
 
 
-        <div class="project">
+        <div class="project-card">
 
-            <h3>SAP ABAP Applications</h3>
+            <h3>Backend & REST API Projects</h3>
 
             <p>
-                Backend-oriented SAP ABAP development involving
-                reports, ALV, database operations and enhancement
-                concepts.
+                Backend development projects focused on API design,
+                database integration, application logic and testing.
             </p>
 
-            <div class="tech">
-                <span>SAP ABAP</span>
-                <span>Reports</span>
-                <span>ALV</span>
-                <span>SQL</span>
+            <div class="project-tech">
+                Java | Python | Spring Boot | SQL | REST APIs
             </div>
+
+            <a class="btn btn-outline"
+               href="https://github.com/masinabalasairamakrishna"
+               target="_blank">
+                View GitHub
+            </a>
 
         </div>
 
 
-        <div class="project">
+        <div class="project-card">
 
-            <h3>REST API Projects</h3>
+            <h3>SAP ABAP Projects</h3>
 
             <p>
-                Backend API development focused on creating,
-                testing and integrating RESTful services using
-                modern backend technologies.
+                SAP ABAP development work involving reports, internal
+                tables, data structures and enterprise application concepts.
             </p>
 
-            <div class="tech">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>REST</span>
-                <span>JSON</span>
-                <span>Postman</span>
+            <div class="project-tech">
+                SAP ABAP | SQL | Data Structures
             </div>
 
-        </div>
+            <a class="btn btn-outline"
+               href="https://github.com/masinabalasairamakrishna"
+               target="_blank">
+                View Projects
+            </a>
 
+        </div>
 
     </div>
 
@@ -740,43 +698,50 @@
 
 <!-- CERTIFICATIONS -->
 
-<section id="certifications">
+<section id="certifications" class="certifications">
 
     <div class="section-title">
 
-        <h2>Certifications</h2>
+        <h2>Certifications & Learning</h2>
 
-        <p>
-            Professional learning and technology certifications
-        </p>
+        <p>Continuous professional development</p>
 
     </div>
 
 
     <div class="cert-grid">
 
-        <div class="cert">
+        <div class="cert-card">
 
-            <h3>
-                Oracle Certified Generative AI Professional
-            </h3>
+            <h3>Oracle Certified Generative AI Professional</h3>
 
             <p>
-                Generative AI and modern AI technology certification.
+                Oracle certification focused on Generative AI concepts
+                and modern AI technologies.
             </p>
 
         </div>
 
 
-        <div class="cert">
+        <div class="cert-card">
 
-            <h3>
-                Salesforce Agentforce
-            </h3>
+            <h3>Salesforce Agentforce</h3>
 
             <p>
-                Salesforce Agentforce learning and certification
-                experience.
+                Training and learning related to Salesforce Agentforce
+                and AI-powered enterprise applications.
+            </p>
+
+        </div>
+
+
+        <div class="cert-card">
+
+            <h3>Backend Development</h3>
+
+            <p>
+                Continuous learning in Java, Python, Spring Boot,
+                REST APIs, SQL and software engineering.
             </p>
 
         </div>
@@ -797,14 +762,12 @@
     </div>
 
 
-    <div class="education-card">
+    <div class="education-box">
 
-        <h3>
-            Sri Vasavi Engineering College
-        </h3>
+        <h3>Sri Vasavi Engineering College</h3>
 
         <p>
-            Computer Science Engineering
+            Engineering Student
         </p>
 
         <p>
@@ -818,49 +781,37 @@
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section id="contact" class="contact">
 
-    <div class="section-title">
+    <h2>Let's Connect</h2>
 
-        <h2>Let's Connect</h2>
-
-        <p>
-            Interested in software engineering and backend development opportunities.
-        </p>
-
-    </div>
+    <p>
+        I am open to software engineering, backend development
+        and technology opportunities.
+    </p>
 
 
-    <div class="contact-box">
+    <div class="socials">
 
-        <p>
-            Feel free to connect with me through my professional profiles.
-        </p>
+        <a href="https://github.com/masinabalasairamakrishna"
+           target="_blank">
+            GitHub
+        </a>
 
+        <a href="https://www.linkedin.com/in/masina-bala-sai-rama-krishna-985601415/"
+           target="_blank">
+            LinkedIn
+        </a>
 
-        <div class="socials">
+        <a href="https://leetcode.com/u/masina_sairam/"
+           target="_blank">
+            LeetCode
+        </a>
 
-            <a href="https://github.com/masinabalasairamakrishna"
-               target="_blank">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/masina-bala-sai-rama-krishna-985601415/"
-               target="_blank">
-                LinkedIn
-            </a>
-
-            <a href="https://leetcode.com/u/masina_sairam/"
-               target="_blank">
-                LeetCode
-            </a>
-
-            <a href="https://www.geeksforgeeks.org/profile/sairamchowdary22"
-               target="_blank">
-                GeeksforGeeks
-            </a>
-
-        </div>
+        <a href="https://www.geeksforgeeks.org/profile/sairamchowdary22"
+           target="_blank">
+            GeeksforGeeks
+        </a>
 
     </div>
 
@@ -880,7 +831,6 @@
     </p>
 
 </footer>
-
 
 </body>
 </html>
